@@ -1,162 +1,326 @@
 [
   {
-    "id": "1",
-    "name": "Paneer Tikka",
-    "category": "veg",
-    "type": "special",
-    "ingredients": ["paneer", "spices", "yogurt"],
-    "instructions": "Grill the marinated paneer."
-  },
-  {
-    "id": "2",
-    "name": "Chicken Curry",
+    "id": 1,
+    "english_name": "Scrambled Eggs",
+    "marathi_name": "अंडा भुर्जी",
     "category": "non-veg",
     "type": "normal",
-    "ingredients": ["chicken", "onion", "spices"],
-    "instructions": "Cook chicken with spices."
+    "ingredients": ["egg"]
   },
   {
-    "id": "3",
-    "name": "Dal Fry",
-    "category": "veg",
-    "type": "normal",
-    "ingredients": ["lentils", "onion", "tomato"],
-    "instructions": "Cook lentils with seasoning."
-  },
-  {
-    "id": "4",
-    "name": "Butter Chicken",
-    "category": "non-veg",
-    "type": "special",
-    "ingredients": ["chicken", "butter", "tomato", "cream"],
-    "instructions": "Cook chicken in a creamy tomato sauce."
-  },
-  {
-    "id": "5",
-    "name": "Aloo Gobi",
-    "category": "veg",
-    "type": "normal",
-    "ingredients": ["potato", "cauliflower", "spices"],
-    "instructions": "Cook potatoes and cauliflower with spices."
-  },
-  {
-    "id": "6",
-    "name": "Mutton Biryani",
-    "category": "non-veg",
-    "type": "special",
-    "ingredients": ["mutton", "rice", "spices", "yogurt"],
-    "instructions": "Cook mutton with rice and spices."
-  },
-  {
-    "id": "7",
-    "name": "Chole Bhature",
-    "category": "veg",
-    "type": "special",
-    "ingredients": ["chickpeas", "flour", "spices", "yogurt"],
-    "instructions": "Cook chickpeas and serve with fried bread."
-  },
-  {
-    "id": "8",
-    "name": "Fish Curry",
+    "id": 2,
+    "english_name": "Egg curry",
+    "marathi_name": "अंडा करी",
     "category": "non-veg",
     "type": "normal",
-    "ingredients": ["fish", "onion", "tomato", "spices"],
-    "instructions": "Cook fish in a spiced curry sauce."
+    "ingredients": ["egg", "onion", "spices"]
   },
   {
-    "id": "9",
-    "name": "Gobi Manchurian",
-    "category": "veg",
-    "type": "special",
-    "ingredients": ["cauliflower", "corn flour", "spices"],
-    "instructions": "Deep fry cauliflower and toss in a spicy sauce."
-  },
-  {
-    "id": "10",
-    "name": "Paneer Butter Masala",
-    "category": "veg",
-    "type": "special",
-    "ingredients": ["paneer", "butter", "tomato", "cream"],
-    "instructions": "Cook paneer in a rich tomato-based sauce."
-  },
-  {
-    "id": "11",
-    "name": "Palak Paneer",
-    "category": "veg",
+    "id": 3,
+    "english_name": "Dry prawn chutney",
+    "marathi_name": "सुक्या कोळंबीची चटणी",
+    "category": "non-veg",
     "type": "normal",
-    "ingredients": ["spinach", "paneer", "onion", "spices"],
-    "instructions": "Cook paneer with spinach and spices."
+    "ingredients": ["dry prawn", "spices"]
   },
   {
-    "id": "12",
-    "name": "Tandoori Chicken",
+    "id": 4,
+    "english_name": "Chicken curry",
+    "marathi_name": "चिकन करी",
+    "category": "non-veg",
+    "type": "normal",
+    "ingredients": ["chicken", "onion", "spices"]
+  },
+  {
+    "id": 5,
+    "english_name": "Egg Biryani",
+    "marathi_name": "अंडा बिर्याणी",
+    "category": "non-veg",
+    "type": "normal",
+    "ingredients": ["egg", "rice", "spices"]
+  },
+  {
+    "id": 6,
+    "english_name": "Mackerel fry",
+    "marathi_name": "बांगडा फ्राय",
+    "category": "non-veg",
+    "type": "normal",
+    "ingredients": ["mackerel", "spices"]
+  },
+  {
+    "id": 7,
+    "english_name": "Chicken biryani",
+    "marathi_name": "चिकन बिर्याणी",
+    "category": "non-veg",
+    "type": "normal",
+    "ingredients": [
+      "chicken",
+      "Basmati rice",
+      "suhana masala",
+      "Everest masala"
+    ]
+  },
+  {
+    "id": 8,
+    "english_name": "Mutton curry",
+    "marathi_name": "मटण करी",
     "category": "non-veg",
     "type": "special",
-    "ingredients": ["chicken", "yogurt", "spices"],
-    "instructions": "Marinate chicken and grill it."
+    "ingredients": ["mutton", "mutton masala"]
   },
   {
-    "id": "13",
-    "name": "Pulao",
-    "category": "veg",
-    "type": "normal",
-    "ingredients": ["rice", "vegetables", "spices"],
-    "instructions": "Cook rice with vegetables and spices."
-  },
-  {
-    "id": "14",
-    "name": "Shahi Paneer",
-    "category": "veg",
-    "type": "special",
-    "ingredients": ["paneer", "cream", "tomato", "spices"],
-    "instructions": "Cook paneer in a creamy tomato sauce."
-  },
-  {
-    "id": "15",
-    "name": "Lamb Rogan Josh",
+    "id": 9,
+    "english_name": "Nihari",
+    "marathi_name": "निहारी",
     "category": "non-veg",
     "type": "special",
-    "ingredients": ["lamb", "onion", "yogurt", "spices"],
-    "instructions": "Cook lamb in a rich spice-filled gravy."
+    "ingredients": ["mutton", "spices", "yogurt"]
   },
   {
-    "id": "16",
-    "name": "Baingan Bharta",
-    "category": "veg",
-    "type": "normal",
-    "ingredients": ["eggplant", "onion", "tomato", "spices"],
-    "instructions": "Grill eggplant and cook with onions and spices."
-  },
-  {
-    "id": "17",
-    "name": "Malai Kofta",
-    "category": "veg",
-    "type": "special",
-    "ingredients": ["paneer", "potato", "cream", "spices"],
-    "instructions": "Fry dumplings and serve in a creamy gravy."
-  },
-  {
-    "id": "18",
-    "name": "Hyderabadi Biryani",
+    "id": 10,
+    "english_name": "Mutton korma",
+    "marathi_name": "मटण कोरमा",
     "category": "non-veg",
     "type": "special",
-    "ingredients": ["chicken", "rice", "spices", "yogurt"],
-    "instructions": "Cook chicken with rice and spices, layered and cooked."
+    "ingredients": []
   },
   {
-    "id": "19",
-    "name": "Rajma",
+    "id": 11,
+    "english_name": "Butter chicken",
+    "marathi_name": "बटर चिकन",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["chicken", "butter", "spices"]
+  },
+  {
+    "id": 12,
+    "english_name": "Chicken tikka masala",
+    "marathi_name": "चिकन टिक्का मसाला",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["chicken", "spices", "yogurt"]
+  },
+  {
+    "id": 13,
+    "english_name": "Chicken Curry + Chicken Biryani",
+    "marathi_name": "चिकन करी + चिकन बिर्याणी",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": [
+      "chicken",
+      "onion",
+      "spices",
+      "rice",
+      "suhana masala",
+      "Everest masala"
+    ]
+  },
+  {
+    "id": 14,
+    "english_name": "Chicken Curry + Chicken fry",
+    "marathi_name": "चिकन करी + चिकन फ्राय",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["chicken", "yogurt", "lemon"]
+  },
+  {
+    "id": 15,
+    "english_name": "Fish fry + Prawn curry",
+    "marathi_name": "मासे फ्राय + कोळंबी करी",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["fish", "prawn", "spices"]
+  },
+  {
+    "id": 16,
+    "english_name": "Chana masala",
+    "marathi_name": "चना मसाला",
     "category": "veg",
     "type": "normal",
-    "ingredients": ["kidney beans", "onion", "tomato", "spices"],
-    "instructions": "Cook kidney beans with spices and serve with rice."
+    "ingredients": ["chana", "spices", "onion"]
   },
   {
-    "id": "20",
-    "name": "Dosa",
+    "id": 17,
+    "english_name": "Potato curry",
+    "marathi_name": "आलू करी",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["potato", "spices", "onion"]
+  },
+  {
+    "id": 18,
+    "english_name": "Mixed Vegitable curry",
+    "marathi_name": "मिश्रित भाज्या करी",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["potato", "flower", "tomato", "muttor"]
+  },
+  {
+    "id": 19,
+    "english_name": "Dum aloo",
+    "marathi_name": "दम आलू",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["potato", "spices", "onion"]
+  },
+  {
+    "id": 20,
+    "english_name": "Black eyed peas curry",
+    "marathi_name": "चवळीची भाजी",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["black eyed peas", "spices", "onion"]
+  },
+  {
+    "id": 21,
+    "english_name": "Gobi",
+    "marathi_name": "फुलकोबी",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["flower", "spices", "onion"]
+  },
+  {
+    "id": 22,
+    "english_name": "Dal fry",
+    "marathi_name": "डाळ तडका",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["dal", "spices", "onion"]
+  },
+  {
+    "id": 23,
+    "english_name": "udad dal curry",
+    "marathi_name": "उडद डाळ करी",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": []
+  },
+  {
+    "id": 24,
+    "english_name": "Mixed daal",
+    "marathi_name": "मिश्रित डाळ",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": []
+  },
+  {
+    "id": 25,
+    "english_name": "Paalak dal curry",
+    "marathi_name": "पालक डाळ करी",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": []
+  },
+  {
+    "id": 26,
+    "english_name": "Bhendi masala",
+    "marathi_name": "भेंडी मसाला",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": []
+  },
+  {
+    "id": 27,
+    "english_name": "Bitter gourd + varan bhat",
+    "marathi_name": "कडवट भाजी + वरण भात",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": []
+  },
+  {
+    "id": 28,
+    "english_name": "Potato muttor curry",
+    "marathi_name": "आलू मटार करी",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": []
+  },
+  {
+    "id": 29,
+    "english_name": "Moth beans",
+    "marathi_name": "मटकी",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": []
+  },
+  {
+    "id": 30,
+    "english_name": "Paneer gravy",
+    "marathi_name": "पनीर ग्रेवी",
     "category": "veg",
     "type": "special",
-    "ingredients": ["rice", "lentils", "spices"],
-    "instructions": "Ferment the batter and make thin crispy crepes."
+    "ingredients": ["paneer", "spices", "onion"]
+  },
+  {
+    "id": 31,
+    "english_name": "Paalak paneer",
+    "marathi_name": "पालक पनीर",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["paneer", "palak", "spices"]
+  },
+  {
+    "id": 32,
+    "english_name": "Curry pakora",
+    "marathi_name": "कढी पकोरा",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["Besan", "spices", "Taak"]
+  },
+  {
+    "id": 33,
+    "english_name": "Raajma",
+    "marathi_name": "राजमा",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["rajma", "spices", "onion"]
+  },
+  {
+    "id": 34,
+    "english_name": "Fried rice",
+    "marathi_name": "फ्रायड राईस",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["rice", "vegetables", "spices", "fried rice masala"]
+  },
+  {
+    "id": 35,
+    "english_name": "Idali sambhar",
+    "marathi_name": "इडली सांबर",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["rice", "dal", "spices", "sambhar masala"]
+  },
+  {
+    "id": 36,
+    "english_name": "Paav bhaji",
+    "marathi_name": "पाव भाजी",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["vegetables", "spices", "butter"]
+  },
+  {
+    "id": 37,
+    "english_name": "Mushroom masala",
+    "marathi_name": "मशरूम मसाला",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["mushroom", "spices", "onion"]
+  },
+  {
+    "id": 38,
+    "english_name": "Dosa + aloo chutney",
+    "marathi_name": "डोसा + आलू चटणी",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["rice", "dal", "spices", "potato"]
+  },
+  {
+    "id": 39,
+    "english_name": "Butter naan + paneer masala",
+    "marathi_name": "बटर नान + पनीर मसाला",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["flour", "paneer", "spices", "butter"]
   }
 ]

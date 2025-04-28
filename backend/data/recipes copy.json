@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "name": "Paneer Tikka",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["paneer", "spices", "yogurt"],
+    "instructions": "Grill the marinated paneer."
+  },
+  {
+    "id": "2",
+    "name": "Chicken Curry",
+    "category": "non-veg",
+    "type": "normal",
+    "ingredients": ["chicken", "onion", "spices"],
+    "instructions": "Cook chicken with spices."
+  },
+  {
+    "id": "3",
+    "name": "Dal Fry",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["lentils", "onion", "tomato"],
+    "instructions": "Cook lentils with seasoning."
+  },
+  {
+    "id": "4",
+    "name": "Butter Chicken",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["chicken", "butter", "tomato", "cream"],
+    "instructions": "Cook chicken in a creamy tomato sauce."
+  },
+  {
+    "id": "5",
+    "name": "Aloo Gobi",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["potato", "cauliflower", "spices"],
+    "instructions": "Cook potatoes and cauliflower with spices."
+  },
+  {
+    "id": "6",
+    "name": "Mutton Biryani",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["mutton", "rice", "spices", "yogurt"],
+    "instructions": "Cook mutton with rice and spices."
+  },
+  {
+    "id": "7",
+    "name": "Chole Bhature",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["chickpeas", "flour", "spices", "yogurt"],
+    "instructions": "Cook chickpeas and serve with fried bread."
+  },
+  {
+    "id": "8",
+    "name": "Fish Curry",
+    "category": "non-veg",
+    "type": "normal",
+    "ingredients": ["fish", "onion", "tomato", "spices"],
+    "instructions": "Cook fish in a spiced curry sauce."
+  },
+  {
+    "id": "9",
+    "name": "Gobi Manchurian",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["cauliflower", "corn flour", "spices"],
+    "instructions": "Deep fry cauliflower and toss in a spicy sauce."
+  },
+  {
+    "id": "10",
+    "name": "Paneer Butter Masala",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["paneer", "butter", "tomato", "cream"],
+    "instructions": "Cook paneer in a rich tomato-based sauce."
+  },
+  {
+    "id": "11",
+    "name": "Palak Paneer",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["spinach", "paneer", "onion", "spices"],
+    "instructions": "Cook paneer with spinach and spices."
+  },
+  {
+    "id": "12",
+    "name": "Tandoori Chicken",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["chicken", "yogurt", "spices"],
+    "instructions": "Marinate chicken and grill it."
+  },
+  {
+    "id": "13",
+    "name": "Pulao",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["rice", "vegetables", "spices"],
+    "instructions": "Cook rice with vegetables and spices."
+  },
+  {
+    "id": "14",
+    "name": "Shahi Paneer",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["paneer", "cream", "tomato", "spices"],
+    "instructions": "Cook paneer in a creamy tomato sauce."
+  },
+  {
+    "id": "15",
+    "name": "Lamb Rogan Josh",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["lamb", "onion", "yogurt", "spices"],
+    "instructions": "Cook lamb in a rich spice-filled gravy."
+  },
+  {
+    "id": "16",
+    "name": "Baingan Bharta",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["eggplant", "onion", "tomato", "spices"],
+    "instructions": "Grill eggplant and cook with onions and spices."
+  },
+  {
+    "id": "17",
+    "name": "Malai Kofta",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["paneer", "potato", "cream", "spices"],
+    "instructions": "Fry dumplings and serve in a creamy gravy."
+  },
+  {
+    "id": "18",
+    "name": "Hyderabadi Biryani",
+    "category": "non-veg",
+    "type": "special",
+    "ingredients": ["chicken", "rice", "spices", "yogurt"],
+    "instructions": "Cook chicken with rice and spices, layered and cooked."
+  },
+  {
+    "id": "19",
+    "name": "Rajma",
+    "category": "veg",
+    "type": "normal",
+    "ingredients": ["kidney beans", "onion", "tomato", "spices"],
+    "instructions": "Cook kidney beans with spices and serve with rice."
+  },
+  {
+    "id": "20",
+    "name": "Dosa",
+    "category": "veg",
+    "type": "special",
+    "ingredients": ["rice", "lentils", "spices"],
+    "instructions": "Ferment the batter and make thin crispy crepes."
+  }
+]

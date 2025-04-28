@@ -58,7 +58,7 @@ const generateWeekPlan = async (req, res) => {
         ); // More than 2 days ago
       });
 
-      if (pool.length === 0) return null;
+      if (pool.length === 0) return null; // No available recipe to pick
 
       // Randomly pick a recipe from the pool
       const randomIndex = Math.floor(Math.random() * pool.length);
@@ -88,9 +88,17 @@ const generateWeekPlan = async (req, res) => {
 
       // Pick lunch and dinner for the day, ensuring no duplicates and respecting the 2-day rule
       let lunch = pickRecipe(category, types, usedToday);
+      if (!lunch) {
+        console.log(`No available recipe for lunch on ${day}`);
+        continue; // Skip this day or handle it differently
+      }
       usedToday.add(lunch.id);
 
       let dinner = pickRecipe(category, types, usedToday);
+      if (!dinner) {
+        console.log(`No available recipe for dinner on ${day}`);
+        continue; // Skip this day or handle it differently
+      }
       usedToday.add(dinner.id);
 
       // Update the usage history for the recipes selected
@@ -111,4 +119,3 @@ const generateWeekPlan = async (req, res) => {
 module.exports = {
   generateWeekPlan,
 };
-// This function generates a meal plan for the week, ensuring that recipes are not repeated within a 2-day window. It categorizes recipes into vegetarian and non-vegetarian, and assigns them to specific days based on the rules defined in the original code. The generated meal plan is then returned as a JSON response.

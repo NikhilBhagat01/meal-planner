@@ -1,21 +1,23 @@
 const express = require("express");
 const cors = require("cors");
+const planRoutes = require("./routes/plan");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
-// Enable CORS for all routes
+// Middlewares
 app.use(cors());
-
-// Body parser (optional, if you want to handle JSON requests)
 app.use(express.json());
 
 // Routes
+app.use("/api/plan", planRoutes);
+
+// Default route
 app.get("/", (req, res) => {
-  res.send("Hello World! Express + CORS setup successful.");
+  res.send("Meal Planner API is running!");
 });
 
-// Start the server
+// Start Server
 app.listen(PORT, () => {
-  console.log(`Server is running on port http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });

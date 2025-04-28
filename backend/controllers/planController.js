@@ -1,13 +1,24 @@
 const fs = require("fs");
 const path = require("path");
 
+// Path to recipes.json
+const recipesPath = path.join(__dirname, "../data/recipes.json");
+
+// Utility to read recipes from file
+const loadRecipes = () => {
+  return JSON.parse(fs.readFileSync(recipesPath, "utf-8"));
+};
+
+// Utility to save recipes to file
+const saveRecipes = (recipes) => {
+  fs.writeFileSync(recipesPath, JSON.stringify(recipes, null, 2), "utf-8");
+};
+
+// ------------------ Existing Week Planner -------------------
+
 const generateWeekPlan = async (req, res) => {
   try {
-    // Load recipes.json
-    const recipesPath = path.join(__dirname, "../data/recipes.json");
-    const allRecipes = JSON.parse(fs.readFileSync(recipesPath, "utf-8"));
-
-    // Categorize recipes
+    const allRecipes = loadRecipes();
     const categorized = {
       veg: { normal: [], special: [] },
       "non-veg": { normal: [], special: [] },
@@ -17,9 +28,7 @@ const generateWeekPlan = async (req, res) => {
       categorized[r.category][r.type].push(r);
     });
 
-    // Tracking usage
-    const usageCount = {}; // { recipeId: count }
-
+    const usageHistory = {}; // Tracks when a recipe was last used (by id)
     const weekDays = [
       "Monday",
       "Tuesday",
@@ -31,22 +40,29 @@ const generateWeekPlan = async (req, res) => {
     ];
     const mealPlan = {};
 
-    // Helper function to pick a random recipe
-    const pickRecipe = (category, types) => {
+    // Helper function to pick a random recipe, ensuring no duplicates and respecting the 2-day rule
+    const pickRecipe = (category, types, usedToday) => {
       let pool = [];
 
+      // Combine all normal and special recipes from the selected category
       types.forEach((type) => {
         pool = pool.concat(categorized[category][type]);
       });
 
-      pool = pool.filter((r) => (usageCount[r.id] || 0) < 2);
+      // Filter out recipes already used today or within the last 2 days
+      pool = pool.filter((r) => {
+        const lastUsed = usageHistory[r.id] || 0;
+        return (
+          !usedToday.has(r.id) &&
+          Date.now() - lastUsed > 2 * 24 * 60 * 60 * 1000
+        ); // More than 2 days ago
+      });
 
       if (pool.length === 0) return null;
 
+      // Randomly pick a recipe from the pool
       const randomIndex = Math.floor(Math.random() * pool.length);
       const chosen = pool[randomIndex];
-
-      usageCount[chosen.id] = (usageCount[chosen.id] || 0) + 1;
 
       return chosen;
     };
@@ -54,6 +70,7 @@ const generateWeekPlan = async (req, res) => {
     // Plan generation logic
     for (let day of weekDays) {
       mealPlan[day] = { lunch: null, dinner: null };
+      const usedToday = new Set(); // Keep track of recipes already selected for lunch or dinner
 
       let category = "veg";
       let types = ["normal", "special"];
@@ -69,8 +86,19 @@ const generateWeekPlan = async (req, res) => {
         types = ["normal"];
       }
 
-      mealPlan[day].lunch = pickRecipe(category, types);
-      mealPlan[day].dinner = pickRecipe(category, types);
+      // Pick lunch and dinner for the day, ensuring no duplicates and respecting the 2-day rule
+      let lunch = pickRecipe(category, types, usedToday);
+      usedToday.add(lunch.id);
+
+      let dinner = pickRecipe(category, types, usedToday);
+      usedToday.add(dinner.id);
+
+      // Update the usage history for the recipes selected
+      usageHistory[lunch.id] = Date.now();
+      usageHistory[dinner.id] = Date.now();
+
+      mealPlan[day].lunch = lunch;
+      mealPlan[day].dinner = dinner;
     }
 
     res.json(mealPlan);
@@ -80,4 +108,7 @@ const generateWeekPlan = async (req, res) => {
   }
 };
 
-module.exports = { generateWeekPlan };
+module.exports = {
+  generateWeekPlan,
+};
+// This function generates a meal plan for the week, ensuring that recipes are not repeated within a 2-day window. It categorizes recipes into vegetarian and non-vegetarian, and assigns them to specific days based on the rules defined in the original code. The generated meal plan is then returned as a JSON response.

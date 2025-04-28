@@ -1,0 +1,55 @@
+# Backend (Express)
+node_modules/
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/pnpm-debug.log*
+backend/dist/
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+backend/logs/
+backend/*.log
+backend/coverage/
+
+# Frontend (React)
+node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/public/static/
+frontend/.pnp
+frontend.pnp.js
+frontend/coverage/
+
+# General
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# TypeScript cache (if used)
+*.tsbuildinfo
+
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# JetBrains IDE settings
+.idea/
+
+# Editor config files
+*.sublime-workspace
+*.sublime-project
